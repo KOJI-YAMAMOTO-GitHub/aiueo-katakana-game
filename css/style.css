@@ -1,0 +1,80 @@
+li{
+list-style: none;
+}
+
+.centering_parent {
+  padding: 20px;              /* 余白指定 */
+  height: 150px;              /* 高さ指定 */
+}
+
+.centering_item {
+  /* background-color: #03A9F4;  背景色指定 */
+  width: 850px;               /* 幅指定 */
+  margin:  0 auto;            /* 中央寄せ */
+  text-align:  center; 
+}
+.centering_table{ 
+  display: inline-block;
+}
+
+.table{
+  display: flex;
+  font-size: 50px;
+  font-family: 'M PLUS 1p', sans-serif;
+  width: 830px;               /* 幅指定 */
+  margin:  0 auto;            /* 中央寄せ */
+  }
+  
+  .table div ul{
+  display: table;
+  table-layout: fixed;
+  margin: 10px 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  }
+  
+  .table-column{
+  flex-direction: column;
+  margin-right: 0;
+  border: 1px solid #ccc;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    line-height: 55px;
+  }  
+
+  .table-column:active {
+    /*ボタンを押したとき*/
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+    /*下に動く*/
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+    /*影を小さく*/
+    border-bottom: none;
+}
+
+  @media screen and (max-width:600px){
+    .table{
+      color: crimson;
+    }
+  }
+    @media screen and (min-width:1024px){
+      .centering_item {
+        width: 1600px;               /* 幅指定 */
+      }
+      .table{
+        width: 1500px;               /* 幅指定 */
+        }
+        .table-column{
+          flex-direction: column;
+          margin-right: 0;
+          border: 1px solid #ccc;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+          }  
+              
+    }
